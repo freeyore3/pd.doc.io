@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CustomScrollData | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CustomScrollData | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CustomScroll.CustomScrollData">
+
+
+
+  <h1 id="CustomScroll_CustomScrollData" data-uid="CustomScroll.CustomScrollData" class="text-break">
+Class CustomScrollData  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CustomScroll.html">CustomScroll</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CustomScrollData</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CustomScrollData</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="CustomScroll_CustomScrollData__ctor_" data-uid="CustomScroll.CustomScrollData.#ctor*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData__ctor_CustomScroll_CustomScrollView_" data-uid="CustomScroll.CustomScrollData.#ctor(CustomScroll.CustomScrollView)">
+  CustomScrollData(CustomScrollView)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomScrollData(CustomScrollView scrollViewView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scrollViewView</code> <a class="xref" href="CustomScroll.CustomScrollView.html">CustomScrollView</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CustomScroll_CustomScrollData_Count_" data-uid="CustomScroll.CustomScrollData.Count*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_Count" data-uid="CustomScroll.CustomScrollData.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_CtrlMap_" data-uid="CustomScroll.CustomScrollData.CtrlMap*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_CtrlMap" data-uid="CustomScroll.CustomScrollData.CtrlMap">
+  CtrlMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;GameObject, ControlBase&gt; CtrlMap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">GameObject</span>, <a class="xref" href="ControlBase.html">ControlBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_Item_" data-uid="CustomScroll.CustomScrollData.Item*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_Item_System_Int32_" data-uid="CustomScroll.CustomScrollData.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICustomScrollItem this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CustomScroll.ICustomScrollItem.html">ICustomScrollItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__1_System_Action_UnityEngine_GameObject___0_System_Int32__CustomScroll_GetCellSizeDelegate___0__" data-uid="CustomScroll.CustomScrollData.AddEvent``1(System.Action{UnityEngine.GameObject,``0,System.Int32},CustomScroll.GetCellSizeDelegate{``0})">
+  AddEvent&lt;T&gt;(Action&lt;GameObject, T, int&gt;, GetCellSizeDelegate&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;T&gt;(Action&lt;GameObject, T, int&gt; refreshCall, GetCellSizeDelegate&lt;T&gt; getCellSize = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refreshCall</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<span class="xref">GameObject</span>, T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>getCellSize</code> <a class="xref" href="CustomScroll.GetCellSizeDelegate-1.html">GetCellSizeDelegate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__1_System_Action_UnityEngine_GameObject___0__CustomScroll_GetCellSizeDelegate___0__" data-uid="CustomScroll.CustomScrollData.AddEvent``1(System.Action{UnityEngine.GameObject,``0},CustomScroll.GetCellSizeDelegate{``0})">
+  AddEvent&lt;T&gt;(Action&lt;GameObject, T&gt;, GetCellSizeDelegate&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;T&gt;(Action&lt;GameObject, T&gt; refreshCall, GetCellSizeDelegate&lt;T&gt; getCellSize = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refreshCall</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">GameObject</span>, T&gt;</dt>
+    <dd></dd>
+    <dt><code>getCellSize</code> <a class="xref" href="CustomScroll.GetCellSizeDelegate-1.html">GetCellSizeDelegate</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__1_System_String_System_Int32_CustomScroll_CustomScrollEvent___0__" data-uid="CustomScroll.CustomScrollData.AddEvent``1(System.String,System.Int32,CustomScroll.CustomScrollEvent{``0})">
+  AddEvent&lt;T&gt;(string, int, CustomScrollEvent&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;T&gt;(string name, int prefabIndex, CustomScrollEvent&lt;T&gt; eEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>prefabIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>eEvent</code> <a class="xref" href="CustomScroll.CustomScrollEvent-1.html">CustomScrollEvent</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__2_System_Action___0___1_System_Int32__CustomScroll_GetCellSizeDelegate___1__CustomScroll_CreateCtrlCallDelegate___0__" data-uid="CustomScroll.CustomScrollData.AddEvent``2(System.Action{``0,``1,System.Int32},CustomScroll.GetCellSizeDelegate{``1},CustomScroll.CreateCtrlCallDelegate{``0})">
+  AddEvent&lt;TControl, T&gt;(Action&lt;TControl, T, int&gt;, GetCellSizeDelegate&lt;T&gt;, CreateCtrlCallDelegate&lt;TControl&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;TControl, T&gt;(Action&lt;TControl, T, int&gt; refreshCall, GetCellSizeDelegate&lt;T&gt; getCellSize = null, CreateCtrlCallDelegate&lt;TControl&gt; createCtrlCall = null) where TControl : ControlBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refreshCall</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;TControl, T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>getCellSize</code> <a class="xref" href="CustomScroll.GetCellSizeDelegate-1.html">GetCellSizeDelegate</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>createCtrlCall</code> <a class="xref" href="CustomScroll.CreateCtrlCallDelegate-1.html">CreateCtrlCallDelegate</a>&lt;TControl&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TControl</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__2_System_Action___0___1__CustomScroll_GetCellSizeDelegate___1__CustomScroll_CreateCtrlCallDelegate___0__" data-uid="CustomScroll.CustomScrollData.AddEvent``2(System.Action{``0,``1},CustomScroll.GetCellSizeDelegate{``1},CustomScroll.CreateCtrlCallDelegate{``0})">
+  AddEvent&lt;TControl, T&gt;(Action&lt;TControl, T&gt;, GetCellSizeDelegate&lt;T&gt;, CreateCtrlCallDelegate&lt;TControl&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;TControl, T&gt;(Action&lt;TControl, T&gt; refreshCall, GetCellSizeDelegate&lt;T&gt; getCellSize = null, CreateCtrlCallDelegate&lt;TControl&gt; createCtrlCall = null) where TControl : ControlBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refreshCall</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TControl, T&gt;</dt>
+    <dd></dd>
+    <dt><code>getCellSize</code> <a class="xref" href="CustomScroll.GetCellSizeDelegate-1.html">GetCellSizeDelegate</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>createCtrlCall</code> <a class="xref" href="CustomScroll.CreateCtrlCallDelegate-1.html">CreateCtrlCallDelegate</a>&lt;TControl&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TControl</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_AddEvent_" data-uid="CustomScroll.CustomScrollData.AddEvent*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_AddEvent__2_System_String_System_Int32_CustomScroll_CustomScrollEvent___0___1__" data-uid="CustomScroll.CustomScrollData.AddEvent``2(System.String,System.Int32,CustomScroll.CustomScrollEvent{``0,``1})">
+  AddEvent&lt;TControl, T&gt;(string, int, CustomScrollEvent&lt;TControl, T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEvent&lt;TControl, T&gt;(string name, int prefabIndex, CustomScrollEvent&lt;TControl, T&gt; eEvent) where TControl : ControlBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>prefabIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>eEvent</code> <a class="xref" href="CustomScroll.CustomScrollEvent-2.html">CustomScrollEvent</a>&lt;TControl, T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TControl</code></dt>
+    <dd></dd>
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_Insert_" data-uid="CustomScroll.CustomScrollData.Insert*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_Insert__1_System_Int32___0_System_String_System_Boolean_" data-uid="CustomScroll.CustomScrollData.Insert``1(System.Int32,``0,System.String,System.Boolean)">
+  Insert&lt;T&gt;(int, T, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert&lt;T&gt;(int index, T value, string name = null, bool refreshNow = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>refreshNow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_OnRefreshIndex_" data-uid="CustomScroll.CustomScrollData.OnRefreshIndex*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_OnRefreshIndex_UnityEngine_GameObject_System_Int32_" data-uid="CustomScroll.CustomScrollData.OnRefreshIndex(UnityEngine.GameObject,System.Int32)">
+  OnRefreshIndex(GameObject, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRefreshIndex(GameObject cell, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cell</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_Remove_" data-uid="CustomScroll.CustomScrollData.Remove*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_Remove_System_Int32_System_Boolean_" data-uid="CustomScroll.CustomScrollData.Remove(System.Int32,System.Boolean)">
+  Remove(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(int index, bool refreshNow = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>refreshNow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_ReplaceAll_" data-uid="CustomScroll.CustomScrollData.ReplaceAll*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_ReplaceAll__1_System_Collections_Generic_List___0__System_String_" data-uid="CustomScroll.CustomScrollData.ReplaceAll``1(System.Collections.Generic.List{``0},System.String)">
+  ReplaceAll&lt;T&gt;(List&lt;T&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceAll&lt;T&gt;(List&lt;T&gt; list, string name = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_ReplaceAll_" data-uid="CustomScroll.CustomScrollData.ReplaceAll*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_ReplaceAll__2___0_System_String_" data-uid="CustomScroll.CustomScrollData.ReplaceAll``2(``0,System.String)">
+  ReplaceAll&lt;T, TItem&gt;(T, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReplaceAll&lt;T, TItem&gt;(T list, string name = null) where T : ICustomScrollList&lt;TItem&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TItem</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_ReplaceIndex_" data-uid="CustomScroll.CustomScrollData.ReplaceIndex*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_ReplaceIndex__1_System_Int32___0_System_String_System_Boolean_" data-uid="CustomScroll.CustomScrollData.ReplaceIndex``1(System.Int32,``0,System.String,System.Boolean)">
+  ReplaceIndex&lt;T&gt;(int, T, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReplaceIndex&lt;T&gt;(int index, T value, string name, bool refreshNow = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>refreshNow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_ScrollToIndex_" data-uid="CustomScroll.CustomScrollData.ScrollToIndex*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_ScrollToIndex_System_Int32_CustomScroll_ScrollToAlignment_System_Boolean_" data-uid="CustomScroll.CustomScrollData.ScrollToIndex(System.Int32,CustomScroll.ScrollToAlignment,System.Boolean)">
+  ScrollToIndex(int, ScrollToAlignment, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToIndex(int index, ScrollToAlignment alignment, bool onlyHide = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>alignment</code> <a class="xref" href="CustomScroll.ScrollToAlignment.html">ScrollToAlignment</a></dt>
+    <dd></dd>
+    <dt><code>onlyHide</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CustomScroll_CustomScrollData_UpdateByIndex_" data-uid="CustomScroll.CustomScrollData.UpdateByIndex*"></a>
+
+  <h3 id="CustomScroll_CustomScrollData_UpdateByIndex__1_System_Int32___0_" data-uid="CustomScroll.CustomScrollData.UpdateByIndex``1(System.Int32,``0)">
+  UpdateByIndex&lt;T&gt;(int, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateByIndex&lt;T&gt;(int index, T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

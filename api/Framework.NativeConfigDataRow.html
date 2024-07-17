@@ -1,0 +1,1888 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NativeConfigDataRow | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NativeConfigDataRow | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Framework.NativeConfigDataRow">
+
+
+
+  <h1 id="Framework_NativeConfigDataRow" data-uid="Framework.NativeConfigDataRow" class="text-break">
+Class NativeConfigDataRow  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Framework.html">Framework</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NativeConfigDataRow : Disposable, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.Disposable.html">Disposable</a></div>
+      <div><span class="xref">NativeConfigDataRow</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBigInt_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBigInt_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt(Framework.NativeConfigTable.Field)">
+  GetFieldBigInt(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldBigInt(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBigInt_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBigInt_Framework_NativeConfigTable_Field_System_Int64___" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt(Framework.NativeConfigTable.Field,System.Int64[])">
+  GetFieldBigInt(Field, long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldBigInt(NativeConfigTable.Field field, long[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBigInt_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBigInt_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt(System.Int32)">
+  GetFieldBigInt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldBigInt(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBigInt_" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBigInt_System_Int32_System_Int64___" data-uid="Framework.NativeConfigDataRow.GetFieldBigInt(System.Int32,System.Int64[])">
+  GetFieldBigInt(int, long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldBigInt(int fieldIndex, long[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBool_" data-uid="Framework.NativeConfigDataRow.GetFieldBool*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBool_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldBool(Framework.NativeConfigTable.Field)">
+  GetFieldBool(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFieldBool(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBool_" data-uid="Framework.NativeConfigDataRow.GetFieldBool*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBool_Framework_NativeConfigTable_Field_System_Boolean_" data-uid="Framework.NativeConfigDataRow.GetFieldBool(Framework.NativeConfigTable.Field,System.Boolean)">
+  GetFieldBool(Field, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFieldBool(NativeConfigTable.Field field, bool defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBool_" data-uid="Framework.NativeConfigDataRow.GetFieldBool*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBool_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldBool(System.Int32)">
+  GetFieldBool(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFieldBool(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBool_" data-uid="Framework.NativeConfigDataRow.GetFieldBool*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBool_System_Int32_System_Boolean_" data-uid="Framework.NativeConfigDataRow.GetFieldBool(System.Int32,System.Boolean)">
+  GetFieldBool(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFieldBool(int fieldIndex, bool defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBoolArray_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBoolArray_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray(Framework.NativeConfigTable.Field)">
+  GetFieldBoolArray(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (bool[] array, int size) GetFieldBoolArray(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBoolArray_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBoolArray_Framework_NativeConfigTable_Field_System_Boolean___" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray(Framework.NativeConfigTable.Field,System.Boolean[])">
+  GetFieldBoolArray(Field, bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (bool[] array, int size) GetFieldBoolArray(NativeConfigTable.Field field, bool[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBoolArray_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBoolArray_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray(System.Int32)">
+  GetFieldBoolArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (bool[] array, int size) GetFieldBoolArray(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldBoolArray_" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldBoolArray_System_Int32_System_Boolean___" data-uid="Framework.NativeConfigDataRow.GetFieldBoolArray(System.Int32,System.Boolean[])">
+  GetFieldBoolArray(int, bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (bool[] array, int size) GetFieldBoolArray(int fieldIndex, bool[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloat_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloat_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat(Framework.NativeConfigTable.Field)">
+  GetFieldFloat(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFieldFloat(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloat_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloat_Framework_NativeConfigTable_Field_System_Single_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat(Framework.NativeConfigTable.Field,System.Single)">
+  GetFieldFloat(Field, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFieldFloat(NativeConfigTable.Field field, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloat_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloat_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat(System.Int32)">
+  GetFieldFloat(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFieldFloat(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloat_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloat_System_Int32_System_Single_" data-uid="Framework.NativeConfigDataRow.GetFieldFloat(System.Int32,System.Single)">
+  GetFieldFloat(int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFieldFloat(int fieldIndex, float defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloatArray_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloatArray_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray(Framework.NativeConfigTable.Field)">
+  GetFieldFloatArray(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float[] array, int size) GetFieldFloatArray(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloatArray_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloatArray_Framework_NativeConfigTable_Field_System_Single___" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray(Framework.NativeConfigTable.Field,System.Single[])">
+  GetFieldFloatArray(Field, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float[] array, int size) GetFieldFloatArray(NativeConfigTable.Field field, float[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloatArray_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloatArray_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray(System.Int32)">
+  GetFieldFloatArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float[] array, int size) GetFieldFloatArray(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldFloatArray_" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldFloatArray_System_Int32_System_Single___" data-uid="Framework.NativeConfigDataRow.GetFieldFloatArray(System.Int32,System.Single[])">
+  GetFieldFloatArray(int, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float[] array, int size) GetFieldFloatArray(int fieldIndex, float[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.single[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt_" data-uid="Framework.NativeConfigDataRow.GetFieldInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldInt(Framework.NativeConfigTable.Field)">
+  GetFieldInt(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFieldInt(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt_" data-uid="Framework.NativeConfigDataRow.GetFieldInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt_Framework_NativeConfigTable_Field_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldInt(Framework.NativeConfigTable.Field,System.Int32)">
+  GetFieldInt(Field, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFieldInt(NativeConfigTable.Field field, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt_" data-uid="Framework.NativeConfigDataRow.GetFieldInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldInt(System.Int32)">
+  GetFieldInt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFieldInt(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt_" data-uid="Framework.NativeConfigDataRow.GetFieldInt*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt_System_Int32_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldInt(System.Int32,System.Int32)">
+  GetFieldInt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFieldInt(int fieldIndex, int defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64(Framework.NativeConfigTable.Field)">
+  GetFieldInt64(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetFieldInt64(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64_Framework_NativeConfigTable_Field_System_Int64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64(Framework.NativeConfigTable.Field,System.Int64)">
+  GetFieldInt64(Field, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetFieldInt64(NativeConfigTable.Field field, long defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64(System.Int32)">
+  GetFieldInt64(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetFieldInt64(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64_System_Int32_System_Int64_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64(System.Int32,System.Int64)">
+  GetFieldInt64(int, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetFieldInt64(int fieldIndex, long defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64Array_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64Array_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array(Framework.NativeConfigTable.Field)">
+  GetFieldInt64Array(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldInt64Array(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64Array_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64Array_Framework_NativeConfigTable_Field_System_Int64___" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array(Framework.NativeConfigTable.Field,System.Int64[])">
+  GetFieldInt64Array(Field, long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldInt64Array(NativeConfigTable.Field field, long[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64Array_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64Array_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array(System.Int32)">
+  GetFieldInt64Array(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldInt64Array(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldInt64Array_" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldInt64Array_System_Int32_System_Int64___" data-uid="Framework.NativeConfigDataRow.GetFieldInt64Array(System.Int32,System.Int64[])">
+  GetFieldInt64Array(int, long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (long[] array, int size) GetFieldInt64Array(int fieldIndex, long[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int64[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldIntArray_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldIntArray_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray(Framework.NativeConfigTable.Field)">
+  GetFieldIntArray(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int[] array, int size) GetFieldIntArray(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldIntArray_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldIntArray_Framework_NativeConfigTable_Field_System_Int32___" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray(Framework.NativeConfigTable.Field,System.Int32[])">
+  GetFieldIntArray(Field, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int[] array, int size) GetFieldIntArray(NativeConfigTable.Field field, int[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldIntArray_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldIntArray_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray(System.Int32)">
+  GetFieldIntArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int[] array, int size) GetFieldIntArray(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldIntArray_" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldIntArray_System_Int32_System_Int32___" data-uid="Framework.NativeConfigDataRow.GetFieldIntArray(System.Int32,System.Int32[])">
+  GetFieldIntArray(int, int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int[] array, int size) GetFieldIntArray(int fieldIndex, int[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldString_" data-uid="Framework.NativeConfigDataRow.GetFieldString*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldString_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldString(Framework.NativeConfigTable.Field)">
+  GetFieldString(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFieldString(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldString_" data-uid="Framework.NativeConfigDataRow.GetFieldString*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldString_Framework_NativeConfigTable_Field_System_String_" data-uid="Framework.NativeConfigDataRow.GetFieldString(Framework.NativeConfigTable.Field,System.String)">
+  GetFieldString(Field, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFieldString(NativeConfigTable.Field field, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldString_" data-uid="Framework.NativeConfigDataRow.GetFieldString*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldString_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldString(System.Int32)">
+  GetFieldString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFieldString(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldString_" data-uid="Framework.NativeConfigDataRow.GetFieldString*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldString_System_Int32_System_String_" data-uid="Framework.NativeConfigDataRow.GetFieldString(System.Int32,System.String)">
+  GetFieldString(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFieldString(int fieldIndex, string defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldStringArray_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldStringArray_Framework_NativeConfigTable_Field_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray(Framework.NativeConfigTable.Field)">
+  GetFieldStringArray(Field)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (string[] array, int size) GetFieldStringArray(NativeConfigTable.Field field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldStringArray_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldStringArray_Framework_NativeConfigTable_Field_System_String___" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray(Framework.NativeConfigTable.Field,System.String[])">
+  GetFieldStringArray(Field, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (string[] array, int size) GetFieldStringArray(NativeConfigTable.Field field, string[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a>.<a class="xref" href="Framework.NativeConfigTable.Field.html">Field</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldStringArray_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldStringArray_System_Int32_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray(System.Int32)">
+  GetFieldStringArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (string[] array, int size) GetFieldStringArray(int fieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_GetFieldStringArray_" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_GetFieldStringArray_System_Int32_System_String___" data-uid="Framework.NativeConfigDataRow.GetFieldStringArray(System.Int32,System.String[])">
+  GetFieldStringArray(int, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (string[] array, int size) GetFieldStringArray(int fieldIndex, string[] defaultValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[] <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.array">array</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string[],system.int32-.size">size</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_OnDispose_" data-uid="Framework.NativeConfigDataRow.OnDispose*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_OnDispose" data-uid="Framework.NativeConfigDataRow.OnDispose">
+  OnDispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Framework_NativeConfigDataRow_SetRowBytes_" data-uid="Framework.NativeConfigDataRow.SetRowBytes*"></a>
+
+  <h3 id="Framework_NativeConfigDataRow_SetRowBytes_Framework_NativeConfigTable_System_Byte___System_Int32_System_Int32_" data-uid="Framework.NativeConfigDataRow.SetRowBytes(Framework.NativeConfigTable,System.Byte[],System.Int32,System.Int32)">
+  SetRowBytes(NativeConfigTable, byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetRowBytes(NativeConfigTable nativeConfigTable, byte[] rowBytes, int rowBytesOffset, int rowBytesSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nativeConfigTable</code> <a class="xref" href="Framework.NativeConfigTable.html">NativeConfigTable</a></dt>
+    <dd></dd>
+    <dt><code>rowBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>rowBytesOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rowBytesSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

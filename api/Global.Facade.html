@@ -1,0 +1,1672 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Facade | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Facade | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Facade">
+
+
+
+  <h1 id="Global_Facade" data-uid="Global.Facade" class="text-break">
+Class Facade  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Facade : Disposable, IDisposable, INotifier</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.Disposable.html">Disposable</a></div>
+      <div><span class="xref">Facade</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">INotifier</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Facade__ctor_" data-uid="Global.Facade.#ctor*"></a>
+
+  <h3 id="Global_Facade__ctor" data-uid="Global.Facade.#ctor">
+  Facade()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Facade()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_Facade_controller" data-uid="Global.Facade.controller">
+  controller
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Controller controller</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Controller.html">Controller</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Facade_instance" data-uid="Global.Facade.instance">
+  instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Facade instance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Facade.html">Facade</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Facade_model" data-uid="Global.Facade.model">
+  model
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Model model</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Model.html">Model</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Facade_subject" data-uid="Global.Facade.subject">
+  subject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Subject subject</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Subject.html">Subject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Global_Facade_view" data-uid="Global.Facade.view">
+  view
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected View view</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.View.html">View</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Facade_AddMediator_" data-uid="Global.Facade.AddMediator*"></a>
+
+  <h3 id="Global_Facade_AddMediator_MediatorBase_" data-uid="Global.Facade.AddMediator(MediatorBase)">
+  AddMediator(MediatorBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMediator(MediatorBase mediator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mediator</code> <a class="xref" href="Global.MediatorBase.html">MediatorBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_CreateListeningCommands_" data-uid="Global.Facade.CreateListeningCommands*"></a>
+
+  <h3 id="Global_Facade_CreateListeningCommands" data-uid="Global.Facade.CreateListeningCommands">
+  CreateListeningCommands()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateListeningCommands()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandAsync_" data-uid="Global.Facade.ExecuteCommandAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandAsync__1_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandAsync``1(CommandExecutionFlag)">
+  ExecuteCommandAsync&lt;T&gt;(CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ExecuteCommandAsync&lt;T&gt;(CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseAsync, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandAsync_" data-uid="Global.Facade.ExecuteCommandAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandAsync__2___1_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandAsync``2(``1,CommandExecutionFlag)">
+  ExecuteCommandAsync&lt;T, P1&gt;(P1, CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ExecuteCommandAsync&lt;T, P1&gt;(P1 param1, CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseAsync&lt;P1&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandAsync_" data-uid="Global.Facade.ExecuteCommandAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandAsync__3___1___2_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandAsync``3(``1,``2,CommandExecutionFlag)">
+  ExecuteCommandAsync&lt;T, P1, P2&gt;(P1, P2, CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ExecuteCommandAsync&lt;T, P1, P2&gt;(P1 param1, P2 param2, CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseAsync&lt;P1, P2&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>param2</code> <span class="xref">P2</span></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>P2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResultAsync_" data-uid="Global.Facade.ExecuteCommandResultAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResultAsync__2_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandResultAsync``2(CommandExecutionFlag)">
+  ExecuteCommandResultAsync&lt;T, TResult&gt;(CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResult&gt; ExecuteCommandResultAsync&lt;T, TResult&gt;(CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseResultAsync&lt;TResult&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResultAsync_" data-uid="Global.Facade.ExecuteCommandResultAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResultAsync__3___1_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandResultAsync``3(``1,CommandExecutionFlag)">
+  ExecuteCommandResultAsync&lt;T, P1, TResult&gt;(P1, CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResult&gt; ExecuteCommandResultAsync&lt;T, P1, TResult&gt;(P1 param1, CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseResultAsync&lt;P1, TResult&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResultAsync_" data-uid="Global.Facade.ExecuteCommandResultAsync*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResultAsync__4___1___2_CommandExecutionFlag_" data-uid="Global.Facade.ExecuteCommandResultAsync``4(``1,``2,CommandExecutionFlag)">
+  ExecuteCommandResultAsync&lt;T, P1, P2, TResult&gt;(P1, P2, CommandExecutionFlag)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResult&gt; ExecuteCommandResultAsync&lt;T, P1, P2, TResult&gt;(P1 param1, P2 param2, CommandExecutionFlag flags = CommandExecutionFlag.None) where T : CommandBaseResultAsync&lt;P1, P2, TResult&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>param2</code> <span class="xref">P2</span></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="Global.CommandExecutionFlag.html">CommandExecutionFlag</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span>&lt;TResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>P2</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResult_" data-uid="Global.Facade.ExecuteCommandResult*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResult__2" data-uid="Global.Facade.ExecuteCommandResult``2">
+  ExecuteCommandResult&lt;T, TResult&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResult ExecuteCommandResult&lt;T, TResult&gt;() where T : CommandBaseResult&lt;TResult&gt;, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TResult</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResult_" data-uid="Global.Facade.ExecuteCommandResult*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResult__3___1_" data-uid="Global.Facade.ExecuteCommandResult``3(``1)">
+  ExecuteCommandResult&lt;T, P1, TResult&gt;(P1)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResult ExecuteCommandResult&lt;T, P1, TResult&gt;(P1 param1) where T : CommandBaseResult&lt;P1, TResult&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TResult</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommandResult_" data-uid="Global.Facade.ExecuteCommandResult*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommandResult__4___1___2_" data-uid="Global.Facade.ExecuteCommandResult``4(``1,``2)">
+  ExecuteCommandResult&lt;T, P1, P2, TResult&gt;(P1, P2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResult ExecuteCommandResult&lt;T, P1, P2, TResult&gt;(P1 param1, P2 param2) where T : CommandBaseResult&lt;P1, P2, TResult&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>param2</code> <span class="xref">P2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TResult</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>P2</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommand_" data-uid="Global.Facade.ExecuteCommand*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommand__1" data-uid="Global.Facade.ExecuteCommand``1">
+  ExecuteCommand&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCommand&lt;T&gt;() where T : CommandBase, new()</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommand_" data-uid="Global.Facade.ExecuteCommand*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommand__2___1_" data-uid="Global.Facade.ExecuteCommand``2(``1)">
+  ExecuteCommand&lt;T, P1&gt;(P1)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCommand&lt;T, P1&gt;(P1 param1) where T : CommandBase&lt;P1&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_ExecuteCommand_" data-uid="Global.Facade.ExecuteCommand*"></a>
+
+  <h3 id="Global_Facade_ExecuteCommand__3___1___2_" data-uid="Global.Facade.ExecuteCommand``3(``1,``2)">
+  ExecuteCommand&lt;T, P1, P2&gt;(P1, P2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCommand&lt;T, P1, P2&gt;(P1 param1, P2 param2) where T : CommandBase&lt;P1, P2&gt;, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param1</code> <span class="xref">P1</span></dt>
+    <dd></dd>
+    <dt><code>param2</code> <span class="xref">P2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P1</code></dt>
+    <dd></dd>
+    <dt><code>P2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_GetAllMediators_" data-uid="Global.Facade.GetAllMediators*"></a>
+
+  <h3 id="Global_Facade_GetAllMediators__1_System_Collections_Generic_IList___0__" data-uid="Global.Facade.GetAllMediators``1(System.Collections.Generic.IList{``0})">
+  GetAllMediators&lt;T&gt;(IList&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAllMediators&lt;T&gt;(IList&lt;T&gt; mediators) where T : MediatorBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mediators</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_GetInstance_" data-uid="Global.Facade.GetInstance*"></a>
+
+  <h3 id="Global_Facade_GetInstance" data-uid="Global.Facade.GetInstance">
+  GetInstance()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Facade GetInstance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.Facade.html">Facade</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_GetMediatorCountOfType_" data-uid="Global.Facade.GetMediatorCountOfType*"></a>
+
+  <h3 id="Global_Facade_GetMediatorCountOfType__1" data-uid="Global.Facade.GetMediatorCountOfType``1">
+  GetMediatorCountOfType&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMediatorCountOfType&lt;T&gt;() where T : MediatorBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_HasCommand_" data-uid="Global.Facade.HasCommand*"></a>
+
+  <h3 id="Global_Facade_HasCommand__1" data-uid="Global.Facade.HasCommand``1">
+  HasCommand&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCommand&lt;T&gt;() where T : CommandBaseCommon</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_HasMediator_" data-uid="Global.Facade.HasMediator*"></a>
+
+  <h3 id="Global_Facade_HasMediator__1" data-uid="Global.Facade.HasMediator``1">
+  HasMediator&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMediator&lt;T&gt;() where T : MediatorBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_HasProxy_" data-uid="Global.Facade.HasProxy*"></a>
+
+  <h3 id="Global_Facade_HasProxy__1" data-uid="Global.Facade.HasProxy``1">
+  HasProxy&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProxy&lt;T&gt;() where T : ProxyBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_OnDispose_" data-uid="Global.Facade.OnDispose*"></a>
+
+  <h3 id="Global_Facade_OnDispose" data-uid="Global.Facade.OnDispose">
+  OnDispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RegisterObserver_" data-uid="Global.Facade.RegisterObserver*"></a>
+
+  <h3 id="Global_Facade_RegisterObserver_IDAndTagKey_System_Reflection_MethodInfo_System_Object_System_Object_" data-uid="Global.Facade.RegisterObserver(IDAndTagKey,System.Reflection.MethodInfo,System.Object,System.Object)">
+  RegisterObserver(IDAndTagKey, MethodInfo, object, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterObserver(IDAndTagKey notificationId, MethodInfo methodInfo, object target, object notifyContext = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationId</code> <a class="xref" href="Global.IDAndTagKey.html">IDAndTagKey</a></dt>
+    <dd></dd>
+    <dt><code>methodInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>notifyContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RegisterObserver_" data-uid="Global.Facade.RegisterObserver*"></a>
+
+  <h3 id="Global_Facade_RegisterObserver_System_Type_NotifyDelegate_System_Object_" data-uid="Global.Facade.RegisterObserver(System.Type,NotifyDelegate,System.Object)">
+  RegisterObserver(Type, NotifyDelegate, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterObserver(Type notificationType, NotifyDelegate notifyMethod, object notifyContext = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>notifyMethod</code> <a class="xref" href="Global.NotifyDelegate.html">NotifyDelegate</a></dt>
+    <dd></dd>
+    <dt><code>notifyContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RegisterObserver_" data-uid="Global.Facade.RegisterObserver*"></a>
+
+  <h3 id="Global_Facade_RegisterObserver_System_Type_System_Reflection_MethodInfo_System_Object_System_Object_" data-uid="Global.Facade.RegisterObserver(System.Type,System.Reflection.MethodInfo,System.Object,System.Object)">
+  RegisterObserver(Type, MethodInfo, object, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterObserver(Type notificationType, MethodInfo methodInfo, object target, object notifyContext = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>methodInfo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>notifyContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RemoveAllListingCommands_" data-uid="Global.Facade.RemoveAllListingCommands*"></a>
+
+  <h3 id="Global_Facade_RemoveAllListingCommands" data-uid="Global.Facade.RemoveAllListingCommands">
+  RemoveAllListingCommands()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllListingCommands()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RemoveCommand_" data-uid="Global.Facade.RemoveCommand*"></a>
+
+  <h3 id="Global_Facade_RemoveCommand_CommandBaseCommon_" data-uid="Global.Facade.RemoveCommand(CommandBaseCommon)">
+  RemoveCommand(CommandBaseCommon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveCommand(CommandBaseCommon command)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>command</code> <a class="xref" href="Global.CommandBaseCommon.html">CommandBaseCommon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RemoveMediator_" data-uid="Global.Facade.RemoveMediator*"></a>
+
+  <h3 id="Global_Facade_RemoveMediator_MediatorBase_" data-uid="Global.Facade.RemoveMediator(MediatorBase)">
+  RemoveMediator(MediatorBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveMediator(MediatorBase mediator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mediator</code> <a class="xref" href="Global.MediatorBase.html">MediatorBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RemoveObserver_" data-uid="Global.Facade.RemoveObserver*"></a>
+
+  <h3 id="Global_Facade_RemoveObserver_System_Type_System_Object_" data-uid="Global.Facade.RemoveObserver(System.Type,System.Object)">
+  RemoveObserver(Type, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveObserver(Type notificationType, object notifyContext = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notificationType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>notifyContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RemoveProxy_" data-uid="Global.Facade.RemoveProxy*"></a>
+
+  <h3 id="Global_Facade_RemoveProxy_ProxyBase_" data-uid="Global.Facade.RemoveProxy(ProxyBase)">
+  RemoveProxy(ProxyBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveProxy(ProxyBase proxy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>proxy</code> <a class="xref" href="Global.ProxyBase.html">ProxyBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RetrieveCommand_" data-uid="Global.Facade.RetrieveCommand*"></a>
+
+  <h3 id="Global_Facade_RetrieveCommand__1" data-uid="Global.Facade.RetrieveCommand``1">
+  RetrieveCommand&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RetrieveCommand&lt;T&gt;() where T : CommandBaseCommon</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RetrieveMediator_" data-uid="Global.Facade.RetrieveMediator*"></a>
+
+  <h3 id="Global_Facade_RetrieveMediator__1" data-uid="Global.Facade.RetrieveMediator``1">
+  RetrieveMediator&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RetrieveMediator&lt;T&gt;() where T : MediatorBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_RetrieveOrAddProxy_" data-uid="Global.Facade.RetrieveOrAddProxy*"></a>
+
+  <h3 id="Global_Facade_RetrieveOrAddProxy__1" data-uid="Global.Facade.RetrieveOrAddProxy``1">
+  RetrieveOrAddProxy&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RetrieveOrAddProxy&lt;T&gt;() where T : ProxyBase</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_SendNotification_" data-uid="Global.Facade.SendNotification*"></a>
+
+  <h3 id="Global_Facade_SendNotification__1___0_" data-uid="Global.Facade.SendNotification``1(``0)">
+  SendNotification&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendNotification&lt;T&gt;(T notification) where T : struct, INotification</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>notification</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_SendProtocolNotification_" data-uid="Global.Facade.SendProtocolNotification*"></a>
+
+  <h3 id="Global_Facade_SendProtocolNotification_Sproto_SprotoTypeBase_" data-uid="Global.Facade.SendProtocolNotification(Sproto.SprotoTypeBase)">
+  SendProtocolNotification(SprotoTypeBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendProtocolNotification(SprotoTypeBase sproto)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sproto</code> <span class="xref">SprotoTypeBase</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Facade_SendProtocolNotification_" data-uid="Global.Facade.SendProtocolNotification*"></a>
+
+  <h3 id="Global_Facade_SendProtocolNotification_System_Int32_" data-uid="Global.Facade.SendProtocolNotification(System.Int32)">
+  SendProtocolNotification(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendProtocolNotification(int tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

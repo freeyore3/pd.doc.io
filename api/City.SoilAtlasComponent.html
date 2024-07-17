@@ -1,0 +1,885 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SoilAtlasComponent | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SoilAtlasComponent | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="City.SoilAtlasComponent">
+
+
+
+  <h1 id="City_SoilAtlasComponent" data-uid="City.SoilAtlasComponent" class="text-break">
+Class SoilAtlasComponent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="City.html">City</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SoilAtlasComponent : EntityComponent, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.Disposable.html">Disposable</a></div>
+      <div><a class="xref" href="Entity.EntityComponent.html">EntityComponent</a></div>
+      <div><span class="xref">SoilAtlasComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_Id">EntityComponent.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_Components">EntityComponent.Components</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_OnUpdate">EntityComponent.OnUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_OnLateUpdate">EntityComponent.OnLateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_OnInitialize">EntityComponent.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_OnDestroy">EntityComponent.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_Initialize">EntityComponent.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_Update">EntityComponent.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_LateUpdate">EntityComponent.LateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_OnDispose">EntityComponent.OnDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_AddComponent__1___0_">EntityComponent.AddComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_AddComponent__1">EntityComponent.AddComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_GetComponent__1">EntityComponent.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_RemoveComponent__1">EntityComponent.RemoveComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Entity.EntityComponent.html#Entity_EntityComponent_Destroy">EntityComponent.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_DigBlock_City_SoilAtlasComponent_System_Int32_">SoilAtlasComponentSystem.DigBlock(SoilAtlasComponent, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_DigBlockToRoad_City_SoilAtlasComponent_System_Int32_">SoilAtlasComponentSystem.DigBlockToRoad(SoilAtlasComponent, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_GetNearIsRoad_City_SoilAtlasComponent_System_Int32_System_Int32_City_TilePosRelation_">SoilAtlasComponentSystem.GetNearIsRoad(SoilAtlasComponent, int, int, TilePosRelation)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_GetPatrolTargetPosition_City_SoilAtlasComponent_UnityEngine_Vector2Int_">SoilAtlasComponentSystem.GetPatrolTargetPosition(SoilAtlasComponent, Vector2Int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_GetWorkPositionBySoilId_City_SoilAtlasComponent_System_Int32_UnityEngine_Vector3__">SoilAtlasComponentSystem.GetWorkPositionBySoilId(SoilAtlasComponent, int, out Vector3)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_GetWorkPositionByWordPosition_City_SoilAtlasComponent_UnityEngine_Vector3_UnityEngine_Vector3__">SoilAtlasComponentSystem.GetWorkPositionByWordPosition(SoilAtlasComponent, Vector3, out Vector3)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsBuildAndNotCave_City_SoilAtlasComponent_System_Int32_System_Int32_">SoilAtlasComponentSystem.IsBuildAndNotCave(SoilAtlasComponent, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsBuildConnected_City_SoilAtlasComponent_System_Int32_">SoilAtlasComponentSystem.IsBuildConnected(SoilAtlasComponent, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsBuildPosition_City_SoilAtlasComponent_System_Int32_System_Int32_">SoilAtlasComponentSystem.IsBuildPosition(SoilAtlasComponent, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsBuildPosition_City_SoilAtlasComponent_UnityEngine_Vector2Int_">SoilAtlasComponentSystem.IsBuildPosition(SoilAtlasComponent, Vector2Int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsDigging_City_SoilAtlasComponent_UnityEngine_Vector2Int_">SoilAtlasComponentSystem.IsDigging(SoilAtlasComponent, Vector2Int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsDug_City_SoilAtlasComponent_UnityEngine_Vector2Int_">SoilAtlasComponentSystem.IsDug(SoilAtlasComponent, Vector2Int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsRoadConnected_City_SoilAtlasComponent_System_Int32_System_Boolean_">SoilAtlasComponentSystem.IsRoadConnected(SoilAtlasComponent, int, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsRoadConnected_City_SoilAtlasComponent_System_Int32_System_Int32_System_Boolean_">SoilAtlasComponentSystem.IsRoadConnected(SoilAtlasComponent, int, int, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsRoadConnected_City_SoilAtlasComponent_System_Int32_System_Int32_UnityEngine_Vector2Int__System_Boolean_">SoilAtlasComponentSystem.IsRoadConnected(SoilAtlasComponent, int, int, out Vector2Int, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_IsRoadConnected_City_SoilAtlasComponent_System_Int32_UnityEngine_Vector2Int__System_Boolean_">SoilAtlasComponentSystem.IsRoadConnected(SoilAtlasComponent, int, out Vector2Int, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_NeedShowSteelPlate_City_SoilAtlasComponent_System_Int32_System_Int32_">SoilAtlasComponentSystem.NeedShowSteelPlate(SoilAtlasComponent, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="City.SoilAtlasComponentSystem.html#City_SoilAtlasComponentSystem_NeedShowSteelPlate_City_SoilAtlasComponent_System_Int32_System_Int32_System_Int32_System_Int32__">SoilAtlasComponentSystem.NeedShowSteelPlate(SoilAtlasComponent, int, int, int, out int)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="City_SoilAtlasComponent_BuildGraph" data-uid="City.SoilAtlasComponent.BuildGraph">
+  BuildGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoilAtlasComponent.SoilGraph BuildGraph</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="City.SoilAtlasComponent.html">SoilAtlasComponent</a>.<a class="xref" href="City.SoilAtlasComponent.SoilGraph.html">SoilGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_CaveGraph" data-uid="City.SoilAtlasComponent.CaveGraph">
+  CaveGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoilAtlasComponent.SoilGraph CaveGraph</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="City.SoilAtlasComponent.html">SoilAtlasComponent</a>.<a class="xref" href="City.SoilAtlasComponent.SoilGraph.html">SoilGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_DigGraph" data-uid="City.SoilAtlasComponent.DigGraph">
+  DigGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoilAtlasComponent.SoilGraph DigGraph</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="City.SoilAtlasComponent.html">SoilAtlasComponent</a>.<a class="xref" href="City.SoilAtlasComponent.SoilGraph.html">SoilGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_FogGraph" data-uid="City.SoilAtlasComponent.FogGraph">
+  FogGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoilAtlasComponent.SoilGraph FogGraph</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="City.SoilAtlasComponent.html">SoilAtlasComponent</a>.<a class="xref" href="City.SoilAtlasComponent.SoilGraph.html">SoilGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_Height" data-uid="City.SoilAtlasComponent.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_RoadGraph" data-uid="City.SoilAtlasComponent.RoadGraph">
+  RoadGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoilAtlasComponent.SoilGraph RoadGraph</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="City.SoilAtlasComponent.html">SoilAtlasComponent</a>.<a class="xref" href="City.SoilAtlasComponent.SoilGraph.html">SoilGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="City_SoilAtlasComponent_Width" data-uid="City.SoilAtlasComponent.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="City_SoilAtlasComponent_GetSoilCenterPos_" data-uid="City.SoilAtlasComponent.GetSoilCenterPos*"></a>
+
+  <h3 id="City_SoilAtlasComponent_GetSoilCenterPos_System_Int32_" data-uid="City.SoilAtlasComponent.GetSoilCenterPos(System.Int32)">
+  GetSoilCenterPos(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetSoilCenterPos(int soilId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soilId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_GetSoilConfig_" data-uid="City.SoilAtlasComponent.GetSoilConfig*"></a>
+
+  <h3 id="City_SoilAtlasComponent_GetSoilConfig_System_Int32_Logic_NativeTable_soil_location_Data__" data-uid="City.SoilAtlasComponent.GetSoilConfig(System.Int32,Logic.NativeTable_soil_location.Data@)">
+  GetSoilConfig(int, out Data)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSoilConfig(int id, out NativeTable_soil_location.Data cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cfg</code> <a class="xref" href="Logic.NativeTable_soil_location.html">NativeTable_soil_location</a>.<a class="xref" href="Logic.NativeTable_soil_location.Data.html">Data</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_GetSoilConfig_" data-uid="City.SoilAtlasComponent.GetSoilConfig*"></a>
+
+  <h3 id="City_SoilAtlasComponent_GetSoilConfig_System_Int32_System_Int32_Logic_NativeTable_soil_location_Data__" data-uid="City.SoilAtlasComponent.GetSoilConfig(System.Int32,System.Int32,Logic.NativeTable_soil_location.Data@)">
+  GetSoilConfig(int, int, out Data)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSoilConfig(int x, int y, out NativeTable_soil_location.Data cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>cfg</code> <a class="xref" href="Logic.NativeTable_soil_location.html">NativeTable_soil_location</a>.<a class="xref" href="Logic.NativeTable_soil_location.Data.html">Data</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_GetSoilConfig_" data-uid="City.SoilAtlasComponent.GetSoilConfig*"></a>
+
+  <h3 id="City_SoilAtlasComponent_GetSoilConfig_UnityEngine_Vector2Int_Logic_NativeTable_soil_location_Data__" data-uid="City.SoilAtlasComponent.GetSoilConfig(UnityEngine.Vector2Int,Logic.NativeTable_soil_location.Data@)">
+  GetSoilConfig(Vector2Int, out Data)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSoilConfig(Vector2Int pos, out NativeTable_soil_location.Data cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>cfg</code> <a class="xref" href="Logic.NativeTable_soil_location.html">NativeTable_soil_location</a>.<a class="xref" href="Logic.NativeTable_soil_location.Data.html">Data</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_InitComponent_" data-uid="City.SoilAtlasComponent.InitComponent*"></a>
+
+  <h3 id="City_SoilAtlasComponent_InitComponent_City_SoilFloorConfig_" data-uid="City.SoilAtlasComponent.InitComponent(City.SoilFloorConfig)">
+  InitComponent(SoilFloorConfig)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitComponent(SoilFloorConfig soilFloorConfig)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soilFloorConfig</code> <a class="xref" href="City.SoilFloorConfig.html">SoilFloorConfig</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_IsSoilPosition_" data-uid="City.SoilAtlasComponent.IsSoilPosition*"></a>
+
+  <h3 id="City_SoilAtlasComponent_IsSoilPosition_System_Int32_System_Int32_" data-uid="City.SoilAtlasComponent.IsSoilPosition(System.Int32,System.Int32)">
+  IsSoilPosition(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSoilPosition(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_PutBuild_" data-uid="City.SoilAtlasComponent.PutBuild*"></a>
+
+  <h3 id="City_SoilAtlasComponent_PutBuild_UnityEngine_RectInt_" data-uid="City.SoilAtlasComponent.PutBuild(UnityEngine.RectInt)">
+  PutBuild(RectInt)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutBuild(RectInt rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectInt</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_ReassessFogGraph_" data-uid="City.SoilAtlasComponent.ReassessFogGraph*"></a>
+
+  <h3 id="City_SoilAtlasComponent_ReassessFogGraph_System_Int32_" data-uid="City.SoilAtlasComponent.ReassessFogGraph(System.Int32)">
+  ReassessFogGraph(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReassessFogGraph(int buildLv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buildLv</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_UpdateElevatorGraph_" data-uid="City.SoilAtlasComponent.UpdateElevatorGraph*"></a>
+
+  <h3 id="City_SoilAtlasComponent_UpdateElevatorGraph_System_Int32_" data-uid="City.SoilAtlasComponent.UpdateElevatorGraph(System.Int32)">
+  UpdateElevatorGraph(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateElevatorGraph(int depth = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_UpdateFogGraph_" data-uid="City.SoilAtlasComponent.UpdateFogGraph*"></a>
+
+  <h3 id="City_SoilAtlasComponent_UpdateFogGraph" data-uid="City.SoilAtlasComponent.UpdateFogGraph">
+  UpdateFogGraph()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFogGraph()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="City_SoilAtlasComponent_UpdateFogGraph_" data-uid="City.SoilAtlasComponent.UpdateFogGraph*"></a>
+
+  <h3 id="City_SoilAtlasComponent_UpdateFogGraph_System_Int32_System_Int32_System_Int32_" data-uid="City.SoilAtlasComponent.UpdateFogGraph(System.Int32,System.Int32,System.Int32)">
+  UpdateFogGraph(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFogGraph(int soilId, int leftBuildId = 0, int rightBuildId = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>soilId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>leftBuildId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rightBuildId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

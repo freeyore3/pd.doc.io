@@ -1,0 +1,1357 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RecyclableMemoryStreamManager | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RecyclableMemoryStreamManager | PD ">
+      
+      <meta name="description" content="Manages pools of RecyclableMemoryStream objects.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.IO.RecyclableMemoryStreamManager">
+
+
+
+  <h1 id="Microsoft_IO_RecyclableMemoryStreamManager" data-uid="Microsoft.IO.RecyclableMemoryStreamManager" class="text-break">
+Class RecyclableMemoryStreamManager  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.IO.html">IO</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Framework.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Manages pools of RecyclableMemoryStream objects.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class RecyclableMemoryStreamManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RecyclableMemoryStreamManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="Microsoft_IO_RecyclableMemoryStreamManager_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>There are two pools managed in here. The small pool contains same-sized buffers that are handed to streams
+as they write more data.</p>
+<p>For scenarios that need to call GetBuffer(), the large pool contains buffers of various sizes, all
+multiples of LargeBufferMultiple (1 MB by default). They are split by size to avoid overly-wasteful buffer
+usage. There should be far fewer 8 MB buffers than 1 MB buffers, for example.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager__ctor_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.#ctor*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager__ctor" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.#ctor">
+  RecyclableMemoryStreamManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the memory manager with the default block/buffer specifications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecyclableMemoryStreamManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager__ctor_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.#ctor*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.#ctor(System.Int32,System.Int32,System.Int32)">
+  RecyclableMemoryStreamManager(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the memory manager with the given block requiredSize.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecyclableMemoryStreamManager(int blockSize, int largeBufferMultiple, int maximumBufferSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blockSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Size of each block that is pooled. Must be &gt; 0.</p>
+</dd>
+    <dt><code>largeBufferMultiple</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Each large buffer will be a multiple of this value.</p>
+</dd>
+    <dt><code>maximumBufferSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Buffers larger than this are not pooled</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>blockSize is not a positive number, or largeBufferMultiple is not a positive number, or maximumBufferSize is less than blockSize.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>maximumBufferSize is not a multiple of largeBufferMultiple</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_DefaultBlockSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.DefaultBlockSize">
+  DefaultBlockSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultBlockSize = 131072</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_DefaultLargeBufferMultiple" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.DefaultLargeBufferMultiple">
+  DefaultLargeBufferMultiple
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultLargeBufferMultiple = 1048576</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_DefaultMaximumBufferSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.DefaultMaximumBufferSize">
+  DefaultMaximumBufferSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultMaximumBufferSize = 134217728</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_AggressiveBufferReturn_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.AggressiveBufferReturn*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_AggressiveBufferReturn" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.AggressiveBufferReturn">
+  AggressiveBufferReturn
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether dirty buffers can be immediately returned to the buffer pool. E.g. when GetBuffer() is called on
+a stream and creates a single large buffer, if this setting is enabled, the other blocks will be returned
+to the buffer pool immediately.
+Note when enabling this setting that the user is responsible for ensuring that any buffer previously
+retrieved from a stream which is subsequently modified is not used after modification (as it may no longer
+be valid).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AggressiveBufferReturn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_BlockSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.BlockSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_BlockSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.BlockSize">
+  BlockSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The size of each block. It must be set at creation and cannot be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlockSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GenerateCallStacks_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GenerateCallStacks*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GenerateCallStacks" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GenerateCallStacks">
+  GenerateCallStacks
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether to save callstacks for stream allocations. This can help in debugging.
+It should NEVER be turned on generally in production.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GenerateCallStacks { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBufferMultiple_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBufferMultiple*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBufferMultiple" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBufferMultiple">
+  LargeBufferMultiple
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>All buffers are multiples of this number. It must be set at creation and cannot be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LargeBufferMultiple { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBuffersFree_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBuffersFree*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBuffersFree" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBuffersFree">
+  LargeBuffersFree
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many buffers are in the large pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LargeBuffersFree { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_LargePoolFreeSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargePoolFreeSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargePoolFreeSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargePoolFreeSize">
+  LargePoolFreeSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of bytes in large pool not currently in use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LargePoolFreeSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_LargePoolInUseSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargePoolInUseSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargePoolInUseSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargePoolInUseSize">
+  LargePoolInUseSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of bytes currently in use by streams from the large pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LargePoolInUseSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumBufferSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumBufferSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumBufferSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumBufferSize">
+  MaximumBufferSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the maximum buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaximumBufferSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumBufferSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Any buffer that is returned to the pool that is larger than this will be
+discarded and garbage collected.</p>
+</div>
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumFreeLargePoolBytes_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumFreeLargePoolBytes*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumFreeLargePoolBytes" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumFreeLargePoolBytes">
+  MaximumFreeLargePoolBytes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many bytes of large free buffers to allow before we start dropping
+those returned to us.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaximumFreeLargePoolBytes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumFreeSmallPoolBytes_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumFreeSmallPoolBytes*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumFreeSmallPoolBytes" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumFreeSmallPoolBytes">
+  MaximumFreeSmallPoolBytes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many bytes of small free blocks to allow before we start dropping
+those returned to us.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaximumFreeSmallPoolBytes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumStreamCapacity_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumStreamCapacity*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumStreamCapacity" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.MaximumStreamCapacity">
+  MaximumStreamCapacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum stream capacity in bytes. Attempts to set a larger capacity will
+result in an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaximumStreamCapacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Microsoft_IO_RecyclableMemoryStreamManager_MaximumStreamCapacity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A value of 0 indicates no limit.</p>
+</div>
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_SmallBlocksFree_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallBlocksFree*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_SmallBlocksFree" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallBlocksFree">
+  SmallBlocksFree
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many blocks are in the small pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SmallBlocksFree { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_SmallPoolFreeSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallPoolFreeSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_SmallPoolFreeSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallPoolFreeSize">
+  SmallPoolFreeSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of bytes in small pool not currently in use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SmallPoolFreeSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_SmallPoolInUseSize_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallPoolInUseSize*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_SmallPoolInUseSize" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.SmallPoolInUseSize">
+  SmallPoolInUseSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of bytes currently in use by stream from the small pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SmallPoolInUseSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream">
+  GetStream()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a new MemoryStream object with no tag and a default initial capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryStream GetStream()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>A MemoryStream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream(System.String)">
+  GetStream(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a new MemoryStream object with the given tag and a default initial capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryStream GetStream(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A tag which can be used to track the source of the stream.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>A MemoryStream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_System_Byte___System_Int32_System_Int32_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream(System.String,System.Byte[],System.Int32,System.Int32)">
+  GetStream(string, byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a new MemoryStream object with the given tag and with contents copied from the provided
+buffer. The provided buffer is not wrapped or used after construction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryStream GetStream(string tag, byte[] buffer, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A tag which can be used to track the source of the stream.</p>
+</dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The byte buffer to copy data from.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The offset from the start of the buffer to copy from.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes to copy from the buffer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>A MemoryStream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_System_Byte___System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The new stream's position is set to the beginning of the stream when returned.</p>
+</div>
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_System_Int32_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream(System.String,System.Int32)">
+  GetStream(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a new MemoryStream object with the given tag and at least the given capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryStream GetStream(string tag, int requiredSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A tag which can be used to track the source of the stream.</p>
+</dd>
+    <dt><code>requiredSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum desired capacity for the stream.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>A MemoryStream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream*"></a>
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_System_Int32_System_Boolean_" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.GetStream(System.String,System.Int32,System.Boolean)">
+  GetStream(string, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a new MemoryStream object with the given tag and at least the given capacity, possibly using
+a single continugous underlying buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryStream GetStream(string tag, int requiredSize, bool asContiguousBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A tag which can be used to track the source of the stream.</p>
+</dd>
+    <dt><code>requiredSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum desired capacity for the stream.</p>
+</dd>
+    <dt><code>asContiguousBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to attempt to use a single contiguous buffer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.memorystream">MemoryStream</a></dt>
+    <dd><p>A MemoryStream.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Microsoft_IO_RecyclableMemoryStreamManager_GetStream_System_String_System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Retrieving a MemoryStream which provides a single contiguous buffer can be useful in situations
+where the initial size is known and it is desirable to avoid copying data between the smaller underlying
+buffers to a single large one. This is most helpful when you know that you will always call GetBuffer
+on the underlying stream.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_BlockCreated" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.BlockCreated">
+  BlockCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a new block is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler BlockCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_BlockDiscarded" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.BlockDiscarded">
+  BlockDiscarded
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a new block is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler BlockDiscarded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBufferCreated" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBufferCreated">
+  LargeBufferCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a new large buffer is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler LargeBufferCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_LargeBufferDiscarded" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.LargeBufferDiscarded">
+  LargeBufferDiscarded
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a large buffer is discarded, along with the reason for the discard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.LargeBufferDiscardedEventHandler LargeBufferDiscarded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.LargeBufferDiscardedEventHandler.html">LargeBufferDiscardedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_StreamConvertedToArray" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.StreamConvertedToArray">
+  StreamConvertedToArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a user converts a stream to array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler StreamConvertedToArray</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_StreamCreated" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.StreamCreated">
+  StreamCreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a new stream is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler StreamCreated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_StreamDisposed" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.StreamDisposed">
+  StreamDisposed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a stream is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler StreamDisposed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_StreamFinalized" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.StreamFinalized">
+  StreamFinalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a stream is finalized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.EventHandler StreamFinalized</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.EventHandler.html">EventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_StreamLength" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.StreamLength">
+  StreamLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggered when a stream is finalized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.StreamLengthReportHandler StreamLength</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.StreamLengthReportHandler.html">StreamLengthReportHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Microsoft_IO_RecyclableMemoryStreamManager_UsageReport" data-uid="Microsoft.IO.RecyclableMemoryStreamManager.UsageReport">
+  UsageReport
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Periodically triggered to report usage statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event RecyclableMemoryStreamManager.UsageReportEventHandler UsageReport</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.html">RecyclableMemoryStreamManager</a>.<a class="xref" href="Microsoft.IO.RecyclableMemoryStreamManager.UsageReportEventHandler.html">UsageReportEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

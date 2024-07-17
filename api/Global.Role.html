@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Role | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Role | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Global.Role">
+
+
+
+  <h1 id="Global_Role" data-uid="Global.Role" class="text-break">
+Class Role  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>HotUpdate.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Role : Actor, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Global.Disposable.html">Disposable</a></div>
+      <div><a class="xref" href="Global.Actor.html">Actor</a></div>
+      <div><span class="xref">Role</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Global.GuardianShield.html">GuardianShield</a></div>
+      <div><a class="xref" href="Global.Turret.html">Turret</a></div>
+      <div><a class="xref" href="Global.Unit.html">Unit</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Config">Actor.Config</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_CampType">Actor.CampType</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Type">Actor.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Id">Actor.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_IsDead">Actor.IsDead</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Components">Actor.Components</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_OnInitialize">Actor.OnInitialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Initialize">Actor.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_OnUpdate_System_Single_">Actor.OnUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Update_System_Single_">Actor.Update(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_OnLateUpdate_System_Single_">Actor.OnLateUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_LateUpdate_System_Single_">Actor.LateUpdate(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Dead">Actor.Dead()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_OnRelive">Actor.OnRelive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Relive">Actor.Relive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_OnDestroy">Actor.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_Destroy">Actor.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_AddComponent__1___0_">Actor.AddComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Actor.html#Global_Actor_GetComponent__1">Actor.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Global.Disposable.html#Global_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Global_Role__ctor_" data-uid="Global.Role.#ctor*"></a>
+
+  <h3 id="Global_Role__ctor_ActorType_CampType_" data-uid="Global.Role.#ctor(ActorType,CampType)">
+  Role(ActorType, CampType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Role(ActorType type, CampType campType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Global.ActorType.html">ActorType</a></dt>
+    <dd></dd>
+    <dt><code>campType</code> <a class="xref" href="Global.CampType.html">CampType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Global_Role_BindingPointBody_" data-uid="Global.Role.BindingPointBody*"></a>
+
+  <h3 id="Global_Role_BindingPointBody" data-uid="Global.Role.BindingPointBody">
+  BindingPointBody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual GameObject BindingPointBody { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_BuffComponent_" data-uid="Global.Role.BuffComponent*"></a>
+
+  <h3 id="Global_Role_BuffComponent" data-uid="Global.Role.BuffComponent">
+  BuffComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public BuffComponent BuffComponent { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.BuffComponent.html">BuffComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_Collider_" data-uid="Global.Role.Collider*"></a>
+
+  <h3 id="Global_Role_Collider" data-uid="Global.Role.Collider">
+  Collider
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Collider Collider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Collider</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_MoveLayer_" data-uid="Global.Role.MoveLayer*"></a>
+
+  <h3 id="Global_Role_MoveLayer" data-uid="Global.Role.MoveLayer">
+  MoveLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract RoleMoveLayer MoveLayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RoleMoveLayer.html">RoleMoveLayer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_Parameters_" data-uid="Global.Role.Parameters*"></a>
+
+  <h3 id="Global_Role_Parameters" data-uid="Global.Role.Parameters">
+  Parameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoleParameters Parameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.RoleParameters.html">RoleParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_Pos_" data-uid="Global.Role.Pos*"></a>
+
+  <h3 id="Global_Role_Pos" data-uid="Global.Role.Pos">
+  Pos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Pos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_PresentationComponent_" data-uid="Global.Role.PresentationComponent*"></a>
+
+  <h3 id="Global_Role_PresentationComponent" data-uid="Global.Role.PresentationComponent">
+  PresentationComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public PresentationComponent PresentationComponent { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PresentationComponent.html">PresentationComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_PropertyComponent_" data-uid="Global.Role.PropertyComponent*"></a>
+
+  <h3 id="Global_Role_PropertyComponent" data-uid="Global.Role.PropertyComponent">
+  PropertyComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public PropertyComponent PropertyComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.PropertyComponent.html">PropertyComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Global_Role_SkillComponent_" data-uid="Global.Role.SkillComponent*"></a>
+
+  <h3 id="Global_Role_SkillComponent" data-uid="Global.Role.SkillComponent">
+  SkillComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ShowInInspector]
+public SkillComponent SkillComponent { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.SkillComponent.html">SkillComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Global_Role_BuildFeatures_" data-uid="Global.Role.BuildFeatures*"></a>
+
+  <h3 id="Global_Role_BuildFeatures_FeatureList_" data-uid="Global.Role.BuildFeatures(FeatureList)">
+  BuildFeatures(FeatureList)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildFeatures(FeatureList features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="Global.FeatureList.html">FeatureList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_GetBulletLayerNameByCamp_" data-uid="Global.Role.GetBulletLayerNameByCamp*"></a>
+
+  <h3 id="Global_Role_GetBulletLayerNameByCamp_CampType_" data-uid="Global.Role.GetBulletLayerNameByCamp(CampType)">
+  GetBulletLayerNameByCamp(CampType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetBulletLayerNameByCamp(CampType campType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campType</code> <a class="xref" href="Global.CampType.html">CampType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_GetEnemyCamp_" data-uid="Global.Role.GetEnemyCamp*"></a>
+
+  <h3 id="Global_Role_GetEnemyCamp_CampType_" data-uid="Global.Role.GetEnemyCamp(CampType)">
+  GetEnemyCamp(CampType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CampType GetEnemyCamp(CampType campType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campType</code> <a class="xref" href="Global.CampType.html">CampType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Global.CampType.html">CampType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_GetUnitLayerNameByCamp_" data-uid="Global.Role.GetUnitLayerNameByCamp*"></a>
+
+  <h3 id="Global_Role_GetUnitLayerNameByCamp_CampType_" data-uid="Global.Role.GetUnitLayerNameByCamp(CampType)">
+  GetUnitLayerNameByCamp(CampType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUnitLayerNameByCamp(CampType campType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>campType</code> <a class="xref" href="Global.CampType.html">CampType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_OnDead_" data-uid="Global.Role.OnDead*"></a>
+
+  <h3 id="Global_Role_OnDead" data-uid="Global.Role.OnDead">
+  OnDead()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDead()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_OnDispose_" data-uid="Global.Role.OnDispose*"></a>
+
+  <h3 id="Global_Role_OnDispose" data-uid="Global.Role.OnDispose">
+  OnDispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Global_Role_TryGetFutureParam_" data-uid="Global.Role.TryGetFutureParam*"></a>
+
+  <h3 id="Global_Role_TryGetFutureParam__1_FeatureType___0__" data-uid="Global.Role.TryGetFutureParam``1(FeatureType,``0@)">
+  TryGetFutureParam&lt;T&gt;(FeatureType, out T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetFutureParam&lt;T&gt;(FeatureType type, out T reusult) where T : FeatureParamsBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="Global.FeatureType.html">FeatureType</a></dt>
+    <dd></dd>
+    <dt><code>reusult</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

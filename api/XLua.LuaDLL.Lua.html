@@ -1,0 +1,2168 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Lua | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Lua | PD ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XLua.LuaDLL.Lua">
+
+
+
+  <h1 id="XLua_LuaDLL_Lua" data-uid="XLua.LuaDLL.Lua" class="text-break">
+Class Lua  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XLua.html">XLua</a>.<a class="xref" href="XLua.LuaDLL.html">LuaDLL</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Framework.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Lua</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Lua</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XLua_LuaDLL_Lua_LUA_OK" data-uid="XLua.LuaDLL.Lua.LUA_OK">
+  LUA_OK
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LUA_OK</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XLua_LuaDLL_Lua_LoadLuaOpenCJson_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenCJson*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_LoadLuaOpenCJson_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenCJson(System.IntPtr)">
+  LoadLuaOpenCJson(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MonoPInvokeCallback(typeof(lua_CSFunction))]
+public static int LoadLuaOpenCJson(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_LoadLuaOpenCrypt_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenCrypt*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_LoadLuaOpenCrypt_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenCrypt(System.IntPtr)">
+  LoadLuaOpenCrypt(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MonoPInvokeCallback(typeof(lua_CSFunction))]
+public static int LoadLuaOpenCrypt(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_LoadLuaOpenLpeg_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenLpeg*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_LoadLuaOpenLpeg_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.LoadLuaOpenLpeg(System.IntPtr)">
+  LoadLuaOpenLpeg(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MonoPInvokeCallback(typeof(lua_CSFunction))]
+public static int LoadLuaOpenLpeg(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_LoadSocketCore_" data-uid="XLua.LuaDLL.Lua.LoadSocketCore*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_LoadSocketCore_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.LoadSocketCore(System.IntPtr)">
+  LoadSocketCore(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MonoPInvokeCallback(typeof(lua_CSFunction))]
+public static int LoadSocketCore(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaL_error_" data-uid="XLua.LuaDLL.Lua.luaL_error*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaL_error_System_IntPtr_System_String_" data-uid="XLua.LuaDLL.Lua.luaL_error(System.IntPtr,System.String)">
+  luaL_error(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int luaL_error(IntPtr L, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaL_loadbuffer_" data-uid="XLua.LuaDLL.Lua.luaL_loadbuffer*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaL_loadbuffer_System_IntPtr_System_String_System_String_" data-uid="XLua.LuaDLL.Lua.luaL_loadbuffer(System.IntPtr,System.String,System.String)">
+  luaL_loadbuffer(IntPtr, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int luaL_loadbuffer(IntPtr L, string buff, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>buff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaL_newstate_" data-uid="XLua.LuaDLL.Lua.luaL_newstate*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaL_newstate" data-uid="XLua.LuaDLL.Lua.luaL_newstate">
+  luaL_newstate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr luaL_newstate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaL_openlibs_" data-uid="XLua.LuaDLL.Lua.luaL_openlibs*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaL_openlibs_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.luaL_openlibs(System.IntPtr)">
+  luaL_openlibs(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void luaL_openlibs(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaL_requiref_" data-uid="XLua.LuaDLL.Lua.luaL_requiref*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaL_requiref_System_IntPtr_System_String_XLua_LuaDLL_lua_CSFunction_System_Int32_" data-uid="XLua.LuaDLL.Lua.luaL_requiref(System.IntPtr,System.String,XLua.LuaDLL.lua_CSFunction,System.Int32)">
+  luaL_requiref(IntPtr, string, lua_CSFunction, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaL_requiref(IntPtr L, string modname, lua_CSFunction openf, int glb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>modname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>openf</code> <a class="xref" href="XLua.LuaDLL.lua_CSFunction.html">lua_CSFunction</a></dt>
+    <dd></dd>
+    <dt><code>glb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_close_" data-uid="XLua.LuaDLL.Lua.lua_close*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_close_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.lua_close(System.IntPtr)">
+  lua_close(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_close(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_error_" data-uid="XLua.LuaDLL.Lua.lua_error*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_error_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.lua_error(System.IntPtr)">
+  lua_error(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int lua_error(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_gettop_" data-uid="XLua.LuaDLL.Lua.lua_gettop*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_gettop_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.lua_gettop(System.IntPtr)">
+  lua_gettop(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_gettop(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isboolean_" data-uid="XLua.LuaDLL.Lua.lua_isboolean*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isboolean_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isboolean(System.IntPtr,System.Int32)">
+  lua_isboolean(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool lua_isboolean(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isfunction_" data-uid="XLua.LuaDLL.Lua.lua_isfunction*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isfunction_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isfunction(System.IntPtr,System.Int32)">
+  lua_isfunction(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool lua_isfunction(IntPtr L, int stackPos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>stackPos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isint64_" data-uid="XLua.LuaDLL.Lua.lua_isint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isint64_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isint64(System.IntPtr,System.Int32)">
+  lua_isint64(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool lua_isint64(IntPtr L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isnumber_" data-uid="XLua.LuaDLL.Lua.lua_isnumber*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isnumber_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isnumber(System.IntPtr,System.Int32)">
+  lua_isnumber(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool lua_isnumber(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isstring_" data-uid="XLua.LuaDLL.Lua.lua_isstring*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isstring_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isstring(System.IntPtr,System.Int32)">
+  lua_isstring(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool lua_isstring(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_isuint64_" data-uid="XLua.LuaDLL.Lua.lua_isuint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_isuint64_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_isuint64(System.IntPtr,System.Int32)">
+  lua_isuint64(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool lua_isuint64(IntPtr L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pcall_" data-uid="XLua.LuaDLL.Lua.lua_pcall*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pcall_System_IntPtr_System_Int32_System_Int32_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_pcall(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+  lua_pcall(IntPtr, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int lua_pcall(IntPtr L, int nArgs, int nResults, int errfunc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>nArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nResults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>errfunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pop_" data-uid="XLua.LuaDLL.Lua.lua_pop*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pop_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_pop(System.IntPtr,System.Int32)">
+  lua_pop(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pop(IntPtr L, int amount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>amount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushboolean_" data-uid="XLua.LuaDLL.Lua.lua_pushboolean*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushboolean_System_IntPtr_System_Boolean_" data-uid="XLua.LuaDLL.Lua.lua_pushboolean(System.IntPtr,System.Boolean)">
+  lua_pushboolean(IntPtr, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushboolean(IntPtr L, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushint64_" data-uid="XLua.LuaDLL.Lua.lua_pushint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushint64_System_IntPtr_System_Int64_" data-uid="XLua.LuaDLL.Lua.lua_pushint64(System.IntPtr,System.Int64)">
+  lua_pushint64(IntPtr, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushint64(IntPtr L, long n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushlightuserdata_" data-uid="XLua.LuaDLL.Lua.lua_pushlightuserdata*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushlightuserdata_System_IntPtr_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.lua_pushlightuserdata(System.IntPtr,System.IntPtr)">
+  lua_pushlightuserdata(IntPtr, IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushlightuserdata(IntPtr L, IntPtr udata)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>udata</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushnil_" data-uid="XLua.LuaDLL.Lua.lua_pushnil*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushnil_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.lua_pushnil(System.IntPtr)">
+  lua_pushnil(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushnil(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushnumber_" data-uid="XLua.LuaDLL.Lua.lua_pushnumber*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushnumber_System_IntPtr_System_Double_" data-uid="XLua.LuaDLL.Lua.lua_pushnumber(System.IntPtr,System.Double)">
+  lua_pushnumber(IntPtr, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushnumber(IntPtr L, double number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushstdcallcfunction_" data-uid="XLua.LuaDLL.Lua.lua_pushstdcallcfunction*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushstdcallcfunction_System_IntPtr_XLua_LuaDLL_lua_CSFunction_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_pushstdcallcfunction(System.IntPtr,XLua.LuaDLL.lua_CSFunction,System.Int32)">
+  lua_pushstdcallcfunction(IntPtr, lua_CSFunction, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pushstdcallcfunction(IntPtr L, lua_CSFunction function, int n = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>function</code> <a class="xref" href="XLua.LuaDLL.lua_CSFunction.html">lua_CSFunction</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushstring_" data-uid="XLua.LuaDLL.Lua.lua_pushstring*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushstring_System_IntPtr_System_String_" data-uid="XLua.LuaDLL.Lua.lua_pushstring(System.IntPtr,System.String)">
+  lua_pushstring(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_pushstring(IntPtr L, string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushuint64_" data-uid="XLua.LuaDLL.Lua.lua_pushuint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushuint64_System_IntPtr_System_UInt64_" data-uid="XLua.LuaDLL.Lua.lua_pushuint64(System.IntPtr,System.UInt64)">
+  lua_pushuint64(IntPtr, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushuint64(IntPtr L, ulong n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_pushvalue_" data-uid="XLua.LuaDLL.Lua.lua_pushvalue*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_pushvalue_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_pushvalue(System.IntPtr,System.Int32)">
+  lua_pushvalue(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_pushvalue(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_require_" data-uid="XLua.LuaDLL.Lua.lua_require*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_require_System_IntPtr_System_String_XLua_LuaDLL_lua_CSFunction_" data-uid="XLua.LuaDLL.Lua.lua_require(System.IntPtr,System.String,XLua.LuaDLL.lua_CSFunction)">
+  lua_require(IntPtr, string, lua_CSFunction)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void lua_require(IntPtr L, string modname, lua_CSFunction openf)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>modname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>openf</code> <a class="xref" href="XLua.LuaDLL.lua_CSFunction.html">lua_CSFunction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_settop_" data-uid="XLua.LuaDLL.Lua.lua_settop*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_settop_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_settop(System.IntPtr,System.Int32)">
+  lua_settop(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void lua_settop(IntPtr L, int newTop)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>newTop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_toboolean_" data-uid="XLua.LuaDLL.Lua.lua_toboolean*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_toboolean_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_toboolean(System.IntPtr,System.Int32)">
+  lua_toboolean(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool lua_toboolean(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_tobytes_" data-uid="XLua.LuaDLL.Lua.lua_tobytes*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_tobytes_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_tobytes(System.IntPtr,System.Int32)">
+  lua_tobytes(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] lua_tobytes(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_toint64_" data-uid="XLua.LuaDLL.Lua.lua_toint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_toint64_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_toint64(System.IntPtr,System.Int32)">
+  lua_toint64(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern long lua_toint64(IntPtr L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_tolstring_" data-uid="XLua.LuaDLL.Lua.lua_tolstring*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_tolstring_System_IntPtr_System_Int32_System_IntPtr__" data-uid="XLua.LuaDLL.Lua.lua_tolstring(System.IntPtr,System.Int32,System.IntPtr@)">
+  lua_tolstring(IntPtr, int, out IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr lua_tolstring(IntPtr L, int index, out IntPtr strLen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>strLen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_tonumber_" data-uid="XLua.LuaDLL.Lua.lua_tonumber*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_tonumber_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_tonumber(System.IntPtr,System.Int32)">
+  lua_tonumber(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double lua_tonumber(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_tostring_" data-uid="XLua.LuaDLL.Lua.lua_tostring*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_tostring_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_tostring(System.IntPtr,System.Int32)">
+  lua_tostring(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string lua_tostring(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_touint64_" data-uid="XLua.LuaDLL.Lua.lua_touint64*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_touint64_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_touint64(System.IntPtr,System.Int32)">
+  lua_touint64(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern ulong lua_touint64(IntPtr L, int idx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_lua_type_" data-uid="XLua.LuaDLL.Lua.lua_type*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_lua_type_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.lua_type(System.IntPtr,System.Int32)">
+  lua_type(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern LuaTypes lua_type(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XLua.LuaTypes.html">LuaTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaopen_cjson_" data-uid="XLua.LuaDLL.Lua.luaopen_cjson*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaopen_cjson_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.luaopen_cjson(System.IntPtr)">
+  luaopen_cjson(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_cjson(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaopen_crypt_" data-uid="XLua.LuaDLL.Lua.luaopen_crypt*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaopen_crypt_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.luaopen_crypt(System.IntPtr)">
+  luaopen_crypt(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_crypt(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaopen_lpeg_" data-uid="XLua.LuaDLL.Lua.luaopen_lpeg*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaopen_lpeg_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.luaopen_lpeg(System.IntPtr)">
+  luaopen_lpeg(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_lpeg(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_luaopen_socket_core_" data-uid="XLua.LuaDLL.Lua.luaopen_socket_core*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_luaopen_socket_core_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.luaopen_socket_core(System.IntPtr)">
+  luaopen_socket_core(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int luaopen_socket_core(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xluaL_loadbuffer_" data-uid="XLua.LuaDLL.Lua.xluaL_loadbuffer*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xluaL_loadbuffer_System_IntPtr_System_Byte___System_Int32_System_String_" data-uid="XLua.LuaDLL.Lua.xluaL_loadbuffer(System.IntPtr,System.Byte[],System.Int32,System.String)">
+  xluaL_loadbuffer(IntPtr, byte[], int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xluaL_loadbuffer(IntPtr L, byte[] buff, int size, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>buff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_csharp_error_" data-uid="XLua.LuaDLL.Lua.xlua_csharp_error*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_csharp_error_System_IntPtr_" data-uid="XLua.LuaDLL.Lua.xlua_csharp_error(System.IntPtr)">
+  xlua_csharp_error(IntPtr)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xlua_csharp_error(IntPtr L)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_csharp_str_error_" data-uid="XLua.LuaDLL.Lua.xlua_csharp_str_error*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_csharp_str_error_System_IntPtr_System_String_" data-uid="XLua.LuaDLL.Lua.xlua_csharp_str_error(System.IntPtr,System.String)">
+  xlua_csharp_str_error(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xlua_csharp_str_error(IntPtr L, string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_getglobal_" data-uid="XLua.LuaDLL.Lua.xlua_getglobal*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_getglobal_System_IntPtr_System_String_" data-uid="XLua.LuaDLL.Lua.xlua_getglobal(System.IntPtr,System.String)">
+  xlua_getglobal(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xlua_getglobal(IntPtr L, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_push_csharp_function_" data-uid="XLua.LuaDLL.Lua.xlua_push_csharp_function*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_push_csharp_function_System_IntPtr_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.xlua_push_csharp_function(System.IntPtr,System.IntPtr,System.Int32)">
+  xlua_push_csharp_function(IntPtr, IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void xlua_push_csharp_function(IntPtr L, IntPtr fn, int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>fn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_pushinteger_" data-uid="XLua.LuaDLL.Lua.xlua_pushinteger*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_pushinteger_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.xlua_pushinteger(System.IntPtr,System.Int32)">
+  xlua_pushinteger(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void xlua_pushinteger(IntPtr L, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_pushlstring_" data-uid="XLua.LuaDLL.Lua.xlua_pushlstring*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_pushlstring_System_IntPtr_System_Byte___System_Int32_" data-uid="XLua.LuaDLL.Lua.xlua_pushlstring(System.IntPtr,System.Byte[],System.Int32)">
+  xlua_pushlstring(IntPtr, byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void xlua_pushlstring(IntPtr L, byte[] str, int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_pushuint_" data-uid="XLua.LuaDLL.Lua.xlua_pushuint*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_pushuint_System_IntPtr_System_UInt32_" data-uid="XLua.LuaDLL.Lua.xlua_pushuint(System.IntPtr,System.UInt32)">
+  xlua_pushuint(IntPtr, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void xlua_pushuint(IntPtr L, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_setglobal_" data-uid="XLua.LuaDLL.Lua.xlua_setglobal*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_setglobal_System_IntPtr_System_String_" data-uid="XLua.LuaDLL.Lua.xlua_setglobal(System.IntPtr,System.String)">
+  xlua_setglobal(IntPtr, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xlua_setglobal(IntPtr L, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_tointeger_" data-uid="XLua.LuaDLL.Lua.xlua_tointeger*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_tointeger_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.xlua_tointeger(System.IntPtr,System.Int32)">
+  xlua_tointeger(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int xlua_tointeger(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XLua_LuaDLL_Lua_xlua_touint_" data-uid="XLua.LuaDLL.Lua.xlua_touint*"></a>
+
+  <h3 id="XLua_LuaDLL_Lua_xlua_touint_System_IntPtr_System_Int32_" data-uid="XLua.LuaDLL.Lua.xlua_touint(System.IntPtr,System.Int32)">
+  xlua_touint(IntPtr, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint xlua_touint(IntPtr L, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>L</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

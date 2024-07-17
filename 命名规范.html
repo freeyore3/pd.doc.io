@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>命名规范 | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="命名规范 | PD ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="命名规范">命名规范</h1>
+
+<h2 id="命名方法">命名方法</h2>
+<ul>
+<li>命名采用驼峰规则，不采用下划线分割规则。</li>
+</ul>
+<h2 id="文件夹与文件命名">文件夹与文件命名</h2>
+<ul>
+<li>所有文件夹与文件:首字母大写。</li>
+</ul>
+<h2 id="命名空间">命名空间</h2>
+<h2 id="类">类</h2>
+<h2 id="接口">接口</h2>
+<h2 id="枚举">枚举</h2>
+<h2 id="函数">函数</h2>
+<h2 id="委托和事件">委托和事件</h2>
+<h2 id="属性">属性</h2>
+<h2 id="常量">常量</h2>
+<ul>
+<li>使用首字母大写</li>
+</ul>
+<h2 id="变量">变量</h2>
+<ul>
+<li>局部变量:首字母小写。</li>
+<li>私有与保护成员变量:_首字母小写</li>
+<li>公有成员变量:首字母小写</li>
+</ul>
+<pre><code class="lang-c#">
+namespace Framework.Style 
+{	
+	using UnityEngine;
+	using UnityEngine.UI;
+	using System.Collections;
+	using System.Collections.Generic;
+	
+	// 展示编码风格
+	public enum EnumStyle
+	{
+		Style1 = 0,
+		Style2,
+		Style3,
+		MaxValue
+	}
+
+    struct StructStyle
+    {
+        public int index;
+        public string str;
+        public Vector3 pos;
+        public Quaternion rotation;
+    }
+
+	public class ProgrammingStyle : MonoBehaviour 
+	{
+		// 私有成员变量
+		Button _btn;
+		int _curSelectIndex;
+		Vector3[] _positions;
+		GameObject _view;
+		EnumStyle _enumStyle;
+		StructStyle _struct;
+
+		// public类型变量首字母小写
+		public int lastIndex = 0;
+
+		//public只读变量首字母小写
+		public readonly int initIndex;
+
+		// 常量使用首字母大写
+		public const int First = 1;
+
+		//属性使用首字母大写
+		public int CurSelectIndex 
+		{
+			get { return _curSelectIndex; }
+		}
+
+		// 函数
+		void Start () 
+		{
+			_view = transform.Find (&quot;MainView&quot;).GetComponent&lt;Button&gt;();
+
+			// 临时变量命名采用首字母小写驼峰式
+			GameObject firstPosGo = transform.Find (&quot;FirstPosGo&quot;).gameObject;
+		}
+	}
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

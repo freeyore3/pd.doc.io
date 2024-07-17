@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | PD </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | PD ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="PD">
+            PD
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="说明">说明</h2>
+<ul>
+<li>文档统一放在<strong>manual</strong>目录下，markdown格式，支持用文件夹分类，目录会自动生成</li>
+</ul>
+<p><a href="https://dotnet.github.io/docfx/docs/markdown.html?tabs=linux%2Cdotnet">MarkDown语法参考</a></p>
+<p>建议在 vs code 安装MarkDown插件进行编辑</p>
+<h2 id="安装环境">安装环境</h2>
+<p>命令行运行检查是否已安装 dotnet</p>
+<pre><code class="lang-shell">dotnet --version
+</code></pre>
+<p><a href="https://dotnet.microsoft.com/zh-cn/download">dontnet官方网站</a></p>
+<p>安装好 dotnet 之后，运行 install.bat，即可</p>
+<h2 id="build">Build</h2>
+<h3 id="生成manual">生成manual</h3>
+<p>运行 build_site.bat，自动更新目录</p>
+<h3 id="生成api">生成api</h3>
+<p>运行 build_api.bat，自动生成Unity工程中Framework、HotUpdate两个asmdef的API参考</p>
+<p>代码注释格式如下，将自动生成到api帮助文档</p>
+<pre><code class="lang-csharp">namespace MyNamespace
+{
+    /// &lt;summary&gt;
+    /// Enter description here for class X.
+    /// ID string generated is &quot;T:MyNamespace.MyClass&quot;.
+    /// &lt;/summary&gt;
+    public unsafe class MyClass
+    {
+        /// &lt;summary&gt;
+        /// Enter description for method someMethod.
+        /// ID string generated is &quot;M:MyNamespace.MyClass.someMethod(System.String,System.Int32@,System.Void*)&quot;.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;str&quot;&gt;Describe parameter.&lt;/param&gt;
+        /// &lt;param name=&quot;num&quot;&gt;Describe parameter.&lt;/param&gt;
+        /// &lt;param name=&quot;ptr&quot;&gt;Describe parameter.&lt;/param&gt;
+        /// &lt;returns&gt;Describe return value.&lt;/returns&gt;
+        public int someMethod(string str, ref int nm, void* ptr) { return 1; }
+    }
+}
+</code></pre>
+<h3 id="全部生成">全部生成</h3>
+<p>运行 build_all.bat，生成manual和api</p>
+<h2 id="查看文档">查看文档</h2>
+<p>运行 run.bat，将打开网页定位到<a href="http://127.0.0.1:8081/">http://127.0.0.1:8081/</a></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
